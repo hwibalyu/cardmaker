@@ -1,0 +1,73 @@
+@value makerLightGrey from '../../common/colors.css';
+:root {
+  --backgrodund-color: darkcyan;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  background-color: darkcyan;
+  width: 30vw;
+  overflow: hidden;
+}
+
+.logobar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: var(--backgrodund-color);
+  color: white;
+  font-size: 30px;
+}
+
+.center {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: makerLightGrey;
+  padding: 10px;
+  font-weight: bold;
+}
+.buttons {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: 100%;
+}
+
+.buttons > button {
+  font-size: 1rem;
+  padding: 5px;
+  width: 100%;
+
+  border-radius: 1rem;
+  border: 2px solid gray;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons > button:hover {
+  /* transform: scale(1.02); */
+  transform: rotateX(25deg);
+  border-top-width: 5px;
+  border-top-color: red;
+  transition: all 0.2s;
+}
+
+.footbar {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
